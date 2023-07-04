@@ -2,7 +2,7 @@
 , openssh
 , gitMinimal
 , rsync
-, nix
+, nixUnstable
 , coreutils
 , curl
 , gnugrep
@@ -16,7 +16,7 @@ let
   runtimeInputs = [
     gitMinimal # for git flakes
     rsync
-    nix
+    nixUnstable
     coreutils
     curl # when uploading tarballs
     gnugrep
